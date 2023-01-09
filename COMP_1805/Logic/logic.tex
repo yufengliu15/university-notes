@@ -1,0 +1,168 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}	% Para caracteres en español
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{reg}{Rule}
+\newtheorem{exer}{Exercise}
+\newtheorem{note}{Note}
+% change with chapter
+\newcommand\chaptercounter{1}
+\setcounter{section}{\chaptercounter-1}
+\begin{document}
+\title{Chapter \chaptercounter}
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE \bf Logic}\\
+{\large COMP 1805}\\
+Winter 2023
+\end{center}
+
+Understanding how statements work. Foundations are known as propositions (a declarative sentence that is either true or false). Math equations involving variables are not propositions(within reason).
+
+\section{Operations}
+\subsection{Negation}
+Negation: if $p$ is a proposition.
+
+Negation of $p$, denoted by $\neg p $ is statement: It is not the case that p
+\begin{center}
+	\begin{tabular}{ |c|c| } 
+ 		\hline
+ 		$P$ & $\neg p$ \\
+		\hline
+ 		T & F \\
+ 		F & T \\
+ 		\hline
+	\end{tabular}
+\end{center}
+\subsection{AND}
+If $p$ and $q$ are propositions. Proposition $p$ and $q$ are denoted by $p \land q$, os a statement which is true if both $p$ and $q$ are true, otherwise false. "$\land$" is called conjunction
+\begin{center}
+	\begin{tabular}{ |c|c|c| } 
+ 		\hline
+ 		$P$ & $Q$ & $p \land q$\\
+		\hline
+ 		T & T  & T\\
+ 		T & F & F\\
+		F & T & F\\
+		F & F & F \\
+ 		\hline
+	\end{tabular}
+\end{center}
+\subsection{OR}
+if $p$ and $q$ are propositions. Disjunction of $p$ and $q$, denoted by $p \lor q$ is the proposition $p$ or $q$.
+\begin{center}
+	\begin{tabular}{ |c|c|c| } 
+ 		\hline
+ 		$P$ & $Q$ & $p \lor q$\\
+		\hline
+ 		T & T  & T\\
+ 		T & F & T\\
+		F & T & T\\
+		F & F & F \\
+ 		\hline
+	\end{tabular}
+\end{center}
+
+XOR is the same as OR, only that both cannot be True (if they are both the same bool then False). Denoted by $p \oplus q$
+
+\subsection{Implication}
+If $p$ and $q$ are two propositions. Proposition $p \rightarrow q$ is statement of "if $p$ then $q$" and its truth value is False if $p$ is True and $q$ is False, otherwise True.
+\begin{center}
+	\begin{tabular}{ |c|c|c|} 
+ 		\hline
+ 		$P$ & $Q$ & $p \rightarrow q$  \\
+		\hline
+ 		T & T  & T \\
+ 		T & F & F \\
+		F & T & T \\
+		F & F & T \\
+ 		\hline
+	\end{tabular}
+\end{center}
+Converse of $p \rightarrow q$: $q \rightarrow p$ \\
+Contraposition of $p \rightarrow q$: $q \rightarrow \neg p$ \\
+Reverse of $p \rightarrow q$: $\neg p \rightarrow \neg q$
+
+\begin{defn}
+When two compound propositions have the same truth value for each assignment of values to the atomic proposition we say they are equivalent. 
+\end{defn}
+\subsection{Bi-implication (if and only if)}
+if $p$ and $q$ are two propositions. Proposition $p \longleftrightarrow q$ is statement of "$p$ if and only if$q$" and its truth value is true if $p$ and $q$ have same truth value, otherwise false. 
+\begin{center}
+	\begin{tabular}{ |c|c|c|} 
+ 		\hline
+ 		$P$ & $Q$ & $p \longleftrightarrow q$  \\
+		\hline
+ 		T & T  & T \\
+ 		T & F & F \\
+		F & T & F \\
+		F & F & T \\
+ 		\hline
+	\end{tabular}
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
