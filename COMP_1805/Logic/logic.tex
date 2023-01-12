@@ -32,6 +32,7 @@
 \newtheorem{reg}{Rule}
 \newtheorem{exer}{Exercise}
 \newtheorem{note}{Note}
+\newtheorem{eg}{Example}
 % change with chapter
 \newcommand\chaptercounter{1}
 \setcounter{section}{\chaptercounter-1}
@@ -40,13 +41,14 @@
 \thispagestyle{empty}
 
 \begin{center}
-{\LARGE \bf Logic}\\
+{\LARGE \bf Propositional Logic}\\
 {\large COMP 1805}\\
 Jan 09 2023
 \end{center}
 
 Understanding how statements work. Foundations are known as propositions (a declarative sentence that is either true or false). Math equations involving variables are not propositions(within reason).
 
+Atomic propositions are the simplest things present in a proposition. They are the individuals that vary in true or false values. 
 \section{Operations}
 \subsection{Negation}
 Negation: if $p$ is a proposition.
@@ -137,6 +139,62 @@ if $p$ and $q$ are two propositions. Proposition $p \longleftrightarrow q$ is st
 \item $\leftarrow$
 \item $\longleftrightarrow$
 \end{enumerate}
+
+\section{Truth Tables}
+\textbf{Prove} that  $\neg q \rightarrow \neg p \equiv \neg p \lor q$
+
+\begin{proof} $\neg q \rightarrow \neg p \equiv \neg p \lor q$
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|} 
+ 		\hline
+ 		$p$ & $q$ & $p \rightarrow q$ & $\neg p \lor q$ \\
+		\hline
+ 		T & T  & T & T\\
+ 		T & F & F & F\\
+		F & T & T & T \\
+		F & F & T & T\\
+ 		\hline
+	\end{tabular}
+\end{center}
+\end{proof}
+
+Build the truth table of proposition $(p \lor \neg q) \rightarrow (p \land q)$
+\begin{eg}
+ \begin{center}
+	\begin{tabular}{ |c|c|c|c|c|} 
+ 		\hline
+ 		$p$ & $q$ & $p \lor \neg q$ & $p \land q$ & $(p \lor \neg q) \rightarrow (p \land q)$\\
+		\hline
+ 		T & T  & T & T & T\\
+ 		T & F & T & F& F\\
+		F & T & F & F & T\\
+		F & F & T & F & F\\
+ 		\hline
+	\end{tabular}
+\end{center}
+\end{eg}
+Sometimes truth value doesn't depend on the other truth values: the compound proposition is always true or always false, regardless of the truth assignments of the propositions. For example, $p \lor \neg p$ is always true, regardless of whether $p$ is true or false. This is known as \textbf{tautology}. \\
+
+On the other hand, $p \land \neg p$ is always false, regardless of whether $p$ is true or false. This is known as a \textbf{contradiction}. \\
+
+If a statement is neither of these, then it is known as a \textbf{contingency}. 
+
+\section{Logical Equivalences}
+\begin{reg}
+Fundamental laws in logical operations. Let $T$ represent True and $F$ represent False
+\begin{enumerate}
+ \item Identity Law: $p \land T \equiv p$ and $p \lor F \equiv p$
+\item Domination Law: $p \lor T \equiv T$ and $p \land F \equiv F$ 
+\item Idempotent Law: $p \lor p \equiv p$ and $p \land p \equiv p$ 
+\item Commutative Law: $p \lor q \equiv q \lor p$ and $p \land q \equiv q \land p$
+\item Associative Law: $(p \lor q) \lor r \equiv p \lor (q \lor r)$ and $(p \land q) \land r \equiv p \land (q \land r)$ 
+\item Distributive Law: $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$ and $p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$
+\item Absorption Law: $p \lor (p \land q) \equiv p$ and $p \land (p \lor q) \equiv p$
+\item De Morgan's Law: $\neg (p \land q) \equiv \neg p \lor \neg q $ and $\neg (p \lor q) \equiv \neg p \land \neg q$
+\item Implication Equivalence: $p \rightarrow q \equiv \neg p \lor q$
+\item Biconditional Equivalence: $p \longleftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$
+\end{enumerate}
+\end{reg}
 \end{document}
 
 

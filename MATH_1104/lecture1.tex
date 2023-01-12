@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}	% Para caracteres en español
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{reg}{Rule}
+\newtheorem{exer}{Exercise}
+\newtheorem{note}{Note}
+\newtheorem{eg}{Example}
+% change with chapter
+\newcommand\chaptercounter{1}
+\setcounter{section}{\chaptercounter -1}
+\begin{document}
+\title{Chapter \chaptercounter}
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE \bf Chapter {\chaptercounter \hspace{0}} Lecture Notes}\\
+{\large MATH 1104}\\
+Winter 2023
+\end{center}
+
+\section{System of Linear Equations}
+Some definitions to start with
+
+\begin{defn}
+A linear equation in variables $x_1, x_2, \cdots x_n$ is an equation that can be written in the form $a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b$, where $a_1, a_2, \cdots a_n \in \mathbb{R}$
+\end{defn}
+
+\begin{defn}
+A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables , $x_1,x_2, \cdots, x_n$
+$$a_{1_1} x_1 + a_{1_2} x_2 + \cdots + a_{1_n} x_n = b_1$$
+$$a_{m_1} x_1 + a_{m_2} x_2 + \cdots + a_{m_n} x_n = b_m$$
+\end{defn}
+
+\begin{defn}
+A solution of the system is a list ($S_1, S_2, \cdots S_n$) of numbers that makes each equation true when $S_1, S_2, \cdots S_n$are substituted for $x_1, x_2, \cdots x_n$
+
+\begin{eg}
+\begin{align*}
+x_1 -2x_2 &= -1 \\
+-x_1 + 3x_2 &= 3
+\end{align*}
+A solution here would be $(3,2)$, where $x_1 = 3$ and $x_2 = 2$. Note that this satisfies BOTH equations.
+\end{eg}
+To draw the graph set all the variables but one to 0. Repeat for the remaining variables. Only works for linear equations
+
+A system of linear equations has either 
+
+\begin{enumerate}
+ \item No solutions (Inconsistent) (Parallel)\\
+ \item Unique solution (Consistent)\\
+ \item Infinite solutions (Consistent) (Same equation)
+\end{enumerate}
+
+\begin{align*}
+x_1 -2x_2 + x_3 &= 0 \\
+2x_2 - 8x_3 &= 8 \\
+-4x_1 + 5x_2 + 9x_3 &= -9
+\end{align*}
+
+A=$\begin{bmatrix}
+ 1 & -2 & 1 \\
+ 0& 2 & -8 \\
+ -4 & 5 & 9
+\end{bmatrix}$
+This is a coefficient matrix
+
+x = $\begin{bmatrix}
+x_1 \\
+x_2\\
+x_3
+\end{bmatrix}$
+b = $\begin{bmatrix}
+0 \\
+8\\
+9
+\end{bmatrix}$
+
+Combine the A and b
+
+Fundamental matrix questions:
+\begin{enumerate}
+ \item Does a solution of a linear system exist? \\
+ \item How many solutions does it have if it is consistent? \\
+ \end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
