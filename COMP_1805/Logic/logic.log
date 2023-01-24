@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.6)  11 JAN 2023 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.6)  23 JAN 2023 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -984,9 +984,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-[3] 
+[3]
+
+./logic.tex:208: LaTeX Error: \begin{align*} on input line 202 ended by \end{eg
+}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{eg}
+              
+? s
+OK, entering \scrollmode...
+
+./logic.tex:208: LaTeX Error: \begin{align*} on input line 208 ended by \end{pr
+oof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{eg}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./logic.tex:208: Package amsmath Error: Erroneous nesting of equation structure
+s;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{eg}
+              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./logic.tex:208: LaTeX Error: \begin{align*} on input line 208 ended by \end{pr
+oof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{eg}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./logic.tex:208: Package amsmath Error: Erroneous nesting of equation structure
+s;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{eg}
+              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4] 
 AED: lastpage setting LastPage
-[4] (./logic.aux) ) 
+[5]
+
+./logic.tex:269: LaTeX Error: \begin{proof} on input line 201 ended by \end{doc
+ument}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./logic.aux) )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 201 (\begingroup)
+### semi simple group (level 1) entered at line 199 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
  23315 strings out of 478268
  494431 string characters out of 5846348
@@ -994,19 +1083,19 @@ Here is how much of TeX's memory you used:
  41093 multiletter control sequences out of 15000+600000
  476871 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,9n,104p,437b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb>
-Output written on logic.pdf (4 pages, 100293 bytes).
+ 99i,13n,104p,437b,393s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb>
+Output written on logic.pdf (5 pages, 105952 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

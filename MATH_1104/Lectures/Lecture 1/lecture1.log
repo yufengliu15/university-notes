@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.6)  10 JAN 2023 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.6)  12 JAN 2023 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1000,33 +1000,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-
+[2] 
 AED: lastpage setting LastPage
-[2]
+[3]
 
-./lecture1.tex:114: LaTeX Error: \begin{defn} on input line 62 ended by \end{do
-cument}.
+./lecture1.tex:183: LaTeX Error: \begin{eg} on input line 139 ended by \end{doc
+ument}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 \end{document}
+l.183 \end{document}
                     
 ? 
-(./lecture1.aux) )
-(\end occurred inside a group at level 1)
+(./lecture1.aux)
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 139 (\begingroup)
 ### semi simple group (level 1) entered at line 62 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  23312 strings out of 478268
  494425 string characters out of 5846348
- 812096 words of memory out of 5000000
+ 812099 words of memory out of 5000000
  41091 multiletter control sequences out of 15000+600000
  476218 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,8n,104p,440b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,8n,104p,440b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1040,10 +1045,10 @@ pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on lecture1.pdf (2 pages, 123289 bytes).
+Output written on lecture1.pdf (3 pages, 129037 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -195,6 +195,77 @@ Fundamental laws in logical operations. Let $T$ represent True and $F$ represent
 \item Biconditional Equivalence: $p \longleftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$
 \end{enumerate}
 \end{reg}
+
+\begin{eg}
+\textbf{Prove} that $\neg(p \rightarrow q) \equiv p \land \neg q$
+\begin{proof}
+\begin{align*}
+\neg(p \rightarrow q) &\equiv \neg ( \neg p \lor q) \tag{Implication} \\
+&\equiv \neg(\neg p ) \land \neg q \tag{De Morgan} \\
+&\equiv p \land \neg q \tag{Double Negation}
+\begin{align*}
+\end{proof}
+\end{eg}
+
+\begin{defn}
+\textbf{Satisfiability} is when a compound proposition $p$, can find truth values for the atoms of $p$ such that evaluation of $p$ on those atom values equal to T. As long as we get one truth in the final truth table, then it is satisfiable. Any tautology and contingency is satisfiable. Any contradiction is not satisfiable. 
+\end{defn}
+
+\begin{eg}
+$(p \lor \neg q) \land (q \lor \neg r) \land (r \lor \neg p)$ is satisfiable by $p = T, r = T, q = T$
+\end{eg}
+
+\begin{defn}
+if we represent $T= 1$ and $F = 0$ a bit string is a sequence of zeros and ones. 
+\end{defn}
+
+\begin{eg}
+$p = 0010011$ and $q = 1110110$. Evaluate $p \land q$, $p \lor q$ and $p \oplus q$
+
+$p \land q$
+\begin{align*}
+& 0010011 \\
+\land & 1110110 \\
+& 0010010
+\end{align*}
+
+Treat it as an addition table, where you evaluate each digit separately. 
+\end{eg}
+
+\section{Predicate Logic}
+
+\section{Proof Scheme (Rules of Inference)}
+How to write proofs with logical statements. Given the rules of inference:
+
+\begin{enumerate}
+\item Addition: given $p$, conclude $p \lor q$
+\item Conjunction: given $p$ and $q$, conclude $p \land q$
+\item Simplification: given $p \land q$, conclude $p$ and $q$
+\item Modus Ponens: given $p$ and $p \rightarrow q$, conclude $q$
+\item Modus Tollens: given $\neg q$ and $p\rightarrow q$, conclude $\neg p$
+\item Hypothetical Syllogism: given $p\rightarrow q$ and $q\rightarrow r$, conclude $p\rightarrow r$
+\item Disjunctive Syllogism: given $p\lor q$ and $\neg p$, conclude $q$
+\item Resolution: given $p\lor q$ and $\neg p \lor r$, conclude  $q\lor r$
+\end{enumerate}
+
+\begin{eg}
+$s \rightarrow t$, $\neg p \land q$, $r \rightarrow p$, $\neg r \rightarrow s$, then prove that $t$ is true. 
+
+\begin{proof}
+Using the Rules of Inference. 
+\begin{enumerate}
+\item $s \rightarrow t$
+\item $\neg p \land q$
+\item $r \rightarrow p$
+\item $\neg r \rightarrow s$
+\item $\neg p$ (simplification on Row 2)
+\item $\neg p \rightarrow \neg r$ (contraposition on Row 3)
+\item $\neg r$ (Modus ponens 6)
+\item $\neg r \rightarrow t$ (Hypothetical Syllogism on Row 1 and 4)
+\item $t$ (using Modus ponens on 7,8)
+\end{enumerate}
+\end{proof}
+\end{eg}
 \end{document}
 
 
